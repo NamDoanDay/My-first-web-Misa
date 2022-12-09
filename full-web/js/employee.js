@@ -8,7 +8,9 @@ createEvent();
  */
 function loadData(){
     try {
-        //gọi api lấy dữ liệu
+        //gọi api lấy dữ liệu - ajax
+        //AJAX là phương thức trao đổi dữ liệu với máy chủ và cập nhật một hay nhiều phần của trang web,cơ chế xử lý AJAX – giữa máy khách và máy chủ
+        //Ajax cho phép tạo ra một Ajax Engine nằm giữa giao tiếp này.
         $.ajax({
             type: "GET",
             url: "https://amis.manhnv.net/api/v1/Employees",
@@ -16,14 +18,17 @@ function loadData(){
             // data: "data",
             // dataType: "dataType",
             //khi có dữ liệu, response chính là data của chúng ta
+            //response trả về dạng array, với mỗi phần tử là 1 object
             success: function (response){
-                //xử lí dữ liệu
-                //1. Định dạng ngày tháng -> ngày/tháng/năm
+                console.log(response);
                 $("#employeeDetailTable tbody").empty();
                 for (const emp of response) {
+                    //xử lí dữ liệu
+                    //1. Định dạng ngày tháng -> ngày/tháng/năm
                     var employeeName = emp.EmployeeName;
                     var employeeEmail =emp.Email;
                     var employeePhone = emp.PhoneNumber;
+                    //2. Định dạng tiền tệ -> 1.000.000 vnđ
                     employeePhone =new Intl.NumberFormat('en-US').format(employeePhone);
                     var employeeAddress= emp.Address;
                     var newTrHtml=`<tr>
@@ -33,7 +38,6 @@ function loadData(){
                     <td class="text-align--right">${employeePhone||"chịu"}</td>
                     <td class="text-align--center">${employeeAddress||"chịu"}</td>
                 </tr>`
-                //2. Định dạng tiền tệ -> 1.000.000 vnđ
                 //Hiển thị dữ liệu lên table
                 $("#employeeDetailTable tbody").append(newTrHtml);
                 }
