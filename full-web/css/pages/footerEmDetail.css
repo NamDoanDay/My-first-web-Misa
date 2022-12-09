@@ -1,0 +1,31 @@
+.footer-wapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.cut {
+    padding: 12px 24px;
+    background-color: aqua;
+    border-radius: 4px;
+}
+
+.cut-and-add {
+    padding: 12px 24px;
+    background-color: aqua;
+    border-radius: 4px;
+}
+.icon-cancel {
+    background-color: aqua;
+    padding: 12px 24px;
+    border-radius: 4px;
+}

@@ -1,0 +1,95 @@
+.page{
+    background-color: chocolate;
+    width: 100%;
+    /* bug overflow ở đây */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: auto; */
+}
+.page__header{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page__title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.page__container{
+    margin-top: 16px;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    /* flex: 1; */
+}
+.table__paging{
+    line-height: 32px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toolbar__left{
+    padding: 12px;
+
+}
+.toolbar__right{
+    min-width: 400px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 12px;
+}
+.right-element{
+    padding: 12px;
+    font-size: 16px;
+}
+.left-element{
+    width: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+.icon-footer-divide{
+    min-width: 50px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #E0E1E4;
+    height: 40px;
+}
+td,th{
+    padding: 0 16px;
+}
+.select-department{
+    width: auto;
+    height: 36px;
+}
+.department-name{
+    min-width: 250px;
+    height: 100%;
+}
+.department-name option{
+    text-align: center;
+    font-size: 16px;
+}
+.right-page-header{
+    width: auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 12px;
+}

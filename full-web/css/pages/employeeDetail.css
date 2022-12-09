@@ -1,0 +1,60 @@
+@import url(../../css/pages/headerEmDetail.css);
+@import url(../../css/pages/footerEmDetail.css);
+@import url(../../css/pages/contentEmDetail.css);
+@font-face {
+    font-family: face;
+    src: url(../../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+*{
+font-family: face;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.container{
+    box-sizing: border-box;
+            padding: 12px 12px;
+            background-color: white;
+            width: 50%;
+            height: 70vh;
+            display: grid;
+            grid-template-rows: 56px 1fr 56px;
+}
+.header{
+    width: 100%;
+    height: 56px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+}
+.content-info{
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 24px;
+}
+.page-footer{
+    border-top: 2px solid gray;
+    background-color: violet;
+    width: 100%;
+    height: 56px;
+}

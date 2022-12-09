@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../lib/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <style>
+        .main{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 25%;
+            height: 25%;
+            background-color: aqua;
+            display: grid;
+            grid-template-rows: 1fr 56px ;
+            padding: 24px;
+        }
+        .top-side{
+            /* background-color: red; */
+            border-bottom: 1px solid grey;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+        }
+        .bottom-side{
+            /* background-color: blue; */
+            position: relative;
+        }
+        .footer{
+            padding-top: 12px;
+            position: absolute;
+            right: 0;
+        }
+        .dongy{
+            padding: 12px 24px;
+            background-color: chocolate;
+        }
+        .ti-alert{
+            font-size: 34px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="top-side">
+            <div class="icon-allert">
+                <i class="ti-alert"></i>
+            </div>
+            <div class="detail">Ma nhan vien ... da ton tai trong he thong, vui long kiem tra lai, Ma nhan vien ... da ton tai trong he thong, vui long kiem tra lai</div>
+            </div>
+            <div class="bottom-side">
+            <div class="footer">
+                <div class="dongy">Dong y</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

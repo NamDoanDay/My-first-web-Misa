@@ -1,0 +1,58 @@
+.sidebar{
+    box-sizing: border-box;
+    padding: 20px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* thẻ a đặt display flex có khối như block vì có phần available */
+a.navbar-item{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* c1 */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+/* c2 colection +: các phần tử liền kề ngay phía sau nó sẽ nhận css đấy
+.navbar-item+..navbar-item{
+    margin-top: 4px;
+} */
+.navbar-item{
+    height: 44px;
+    background-color: aliceblue;
+    /* padding-left: 10px; */
+}
+.navbar-item:hover,.sidebar-option:hover{
+    background-color: aqua;
+}
+.navbar__icon{
+    width: 24px;
+    height: 24px;
+    /* background-color: #000000; */
+    margin: 0px 12px;
+    font-size: 18px;
+}
+.navbar__text{
+    color: black;
+}
+.navbar-item--active{
+    background-color: antiquewhite;
+}
+.sidebar-option{
+    width: 100%;
+    height: 44px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.below-icon{
+    font-size: 18px;
+    margin: 0px 12px;
+}

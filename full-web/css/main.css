@@ -1,0 +1,57 @@
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/page.css);
+@import url(./base/button.css);
+@import url(./base/table.css);
+@import url(./base/input.css);
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: Demo Fonts Regular;
+    font-size: 13px;
+    
+}
+@font-face {
+    font-family: Demo Fonts Regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+    font-family: Demo Fonts Bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+/* css */
+/* B1 dựng layout - nhớ đặt màu để quan sát*/
+#container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 56px auto;
+}
+/* B2: dựng lay out item cho các element con - nhớ đặt màu để quan sát  */
+
+
+.sidebar{
+    box-sizing: border-box;
+    background-color: blue;
+    grid-row: 2/3;
+}
+/* main đã đc set kích thước theo grid rồi */
+.main{
+    /* height: 100%; */
+    background-color: yellow;
+    grid-column: 2/3;
+    padding: 24px ;
+    overflow-y: auto;
+}
+.text-align--right{
+    text-align: right;
+}
+.text-align--left{
+    text-align: left;
+}
+.text-align--center{
+    text-align: center;
+}

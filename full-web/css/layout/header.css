@@ -1,0 +1,95 @@
+.header{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column: 1/3;
+    /* B2: dựng lay out item cho các element con  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* chú ý */
+    /* padding-left: 16px;
+    padding-right: 16px; */
+}
+/* B3: Đặt kích thước từng thg con */
+.toggle{
+    width: 24px;
+    height: 24px;
+    /* background-color: aqua; */
+}
+.logo{
+    width: 32px;
+    height: 32px;
+    background-color: aqua;
+    background-image: url(../../assets/img/LogoCorrect.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+.seach{
+    width: 16px;
+    height: 16px;
+    background-color: aqua;
+}
+.avatar{
+    width: 32px;
+    height: 32px;
+    background-color: aqua;
+    border-radius: 20px;
+    background-image: url(../../assets/img/avt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 20px;
+    background-color: pink;
+    width: 200px;
+    padding-left: 16px;
+    margin-right: 8px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    column-gap: 16px;
+    padding-right: 24px;
+    flex: 1;
+}
+.ti-menu-alt{
+    font-size: 24px;
+
+}
+.title{
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: -14px;
+}
+.logo-title{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.three-function-and-avatar{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 16px;
+}
+.header__right .icon{
+    font-size: 20px;
+    /* font-weight: 700; */
+}
+.header-text-search{
+    width: 200px;
+}
+.text-search{
+    width: 200px;
+}

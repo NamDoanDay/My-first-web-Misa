@@ -1,0 +1,74 @@
+/* chứa css ở tất cả những cái component có thể tái sử dụng ở khắp nơi */
+.btn{
+    height: 36px;
+    min-width: 75px;
+    border-radius: 4px;
+    border: unset;
+    color: #fff;
+}
+/* button mac dinh, 1 dang cua button cho 2 gach -- . Quy tac BEM */
+.btn--default{
+    background-color:  greenyellow;
+}
+.btn--error{
+    background-color: red;
+}
+/* chú ý */
+.btn-icon{
+    /* background-image: url(../../assets/img/add.jpg); */
+    /* background-repeat: no-repeat; */
+    background-position-x: 12px;
+    background-position-y: center;
+    background-size: 16px 16px;
+    padding-left: 36px;
+    padding-right: 16px;
+    background-image: url(../../assets/img/addnew.png);
+    background-repeat: no-repeat;
+}
+/* ví dụ nếu sau này muốn tạo button add và nhiều button khác */
+/* .btn-icon--add-employee{
+    background-image: url(../../assets/img/add.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.btn-icon--remove{
+
+}
+.btn--refresh{
+    width: 36px;
+    height: 36px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(../../assets/img/refresh.png);
+    background-position-x: 10px;
+    background-position-y: center;
+    /* background-size: 16px 16px; */
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-color: aquamarine;
+}
+
+.btn--filter{
+    background-color: aquamarine;
+    height: 36px;
+    width: 36px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(../../assets/img/filter.png);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+.icon-ba-cham{
+    background-color: aquamarine;
+    height: 36px;
+    width: 36px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-image: url(../../assets/img/bachamtiep.png);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,22 @@
+.input{
+    height: 32px;
+    outline: none;
+    border: 1px solid grey;
+}
+.input-icon{
+    background-image: url(../../assets/img/add.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 12px;
+    background-size: 16px 16px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+.left-element{
+    height: 36px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* column-gap: 28px; */
+}

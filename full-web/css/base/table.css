@@ -1,0 +1,35 @@
+.table{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.table__toolbar{
+    background-color: brown;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table__container{
+    background-color: aliceblue;
+    flex: 1;
+    margin-top: 12px;
+    overflow-y: auto;
+}
+.table__paging{
+    width: 100%;
+    background-color: red;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divide{
+    height: 56px;
+}
+thead{
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+}

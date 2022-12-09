@@ -1,0 +1,22 @@
+.left-header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 12px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 12px;
+}
+.icon-header {
+    font-size: 24px;
+    
+}

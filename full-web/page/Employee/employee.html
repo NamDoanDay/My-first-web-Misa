@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../lib/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <script src="/js/jquery-3.6.1.min.js"></script>
+</head>
+<!-- thẻ b - bold -->
+<body>
+    <div id="container">
+
+        <!-- header -->
+        <div class="header">
+            <div class="header__left">
+                <div class="toggle ti-menu-alt"></div>
+                <div class="logo-title">
+                <div class="logo"></div>
+                <div class="title">Customize</div>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="header-text-search">
+                    <input class="text-search" type="text">
+                </div>
+                <div class="three-function-and-avatar">
+                <div class="icon ti-email"></div>
+                <div class="icon ti-light-bulb"></div>
+                <div class="icon ti-help-alt"></div>
+                <div class="avatar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <!-- navbar la container -->
+            <div class="navbar">
+                <a class="navbar-item navbar-item--active">
+                    <div class="navbar__icon ti-infinite"></div>
+                    <div class="navbar__text">Tổng quan</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-envelope"></div>
+                    <div class="navbar__text">Hồ sơ</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-agenda"></div>
+                    <div class="navbar__text">Hợp đồng</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-slice"></div>
+                    <div class="navbar__text">Đánh giá</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-face-smile"></div>
+                    <div class="navbar__tex ">khách hàng</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-receipt"></div>
+                    <div class="navbar__text">Nhận xét</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-shine"></div>
+                    <div class="navbar__text">Khen thưởng</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-announcement"></div>
+                    <div class="navbar__text">Báo cáo</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-target"></div>
+                    <div class="navbar__text">Chi tiết</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-user"></div>
+                    <div class="navbar__text">Nạp Card</div>
+                </a>
+                <a class="navbar-item">
+                    <div class="navbar__icon ti-eye"></div>
+                    <div class="navbar__text">Sự cố</div>
+                </a>
+            </div>
+            <div class="sidebar-option">
+                <div class="below-icon ti-control-skip-backward"></div>
+                <div class="below-content">Chuyển hướng</div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="page">
+                <div class="page__header">
+                    <div class="page__title">Employee List</div>
+                    <div class="right-page-header">
+                        <div class="page__button">
+                            <button class="btn btn--default btn-icon">Thêm mới</button>
+                        </div>
+                        <button class="icon-ba-cham"></button>
+                    </div>
+                </div>
+
+                <div class="page__container">
+                    <div class="table">
+                        <!-- toolbar -->
+                        <div class="table__toolbar">
+                            <div class="toolbar__left">
+                                <input type="text" class="input input-icon">
+                            </div>
+                            <div class="toolbar__right">
+                                <div class="select-department">
+                                    <select class="department-name" name="department-name" size="1">
+                                        <option value="">--Chọn công ty đê ông cháu--</option>
+                                        <option value="">MISA shain desu</option>
+                                    </select>
+                                </div>
+                                <button class="btn--filter"></button>
+                                <button class="btn--refresh"></button>
+                            </div>
+                        </div>
+
+                        <!-- table -->
+                        <div class="table__container">
+                            <table id="employeeDetailTable">
+                                <!-- text căn trái, ngày tháng căn giữa, tiền hoặc tỉ lệ căn phải -->
+                                <thead>
+                                    <th class="text-align--left" style="width: 20px;"><input type="checkbox"></th>
+                                    <th class="text-align--left">Full name</th>
+                                    <th class="text-align--left" style="width: 50px;">Email</th>
+                                    <th class="text-align--right" style="width: 100px;">Phone number</th>
+                                    <th class="text-align--center" style="width: 200px;">Address</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đoàn Trung Nam</td>
+                                        <td>namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--right">0705797735</td>
+                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                        </div>
+                        <div class="table__paging">
+                            <div class="right-element">Total: n record</div>
+                            <div class="left-element">
+                                <div class="record-page">Record/Page</div>
+                                <div class="total-page">Current page: 1/50</div>
+                                <div class="current-record">1 - 9 records</div>
+                                <div class="icon-footer-divide">
+                                    <div class="left-icon ti-angle-left"></div>
+                                    <div class="right-icon ti-angle-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/employee.js"></script>
+</body>
+</html>

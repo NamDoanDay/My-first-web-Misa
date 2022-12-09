@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../lib/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Font Regular;
+        }
+        @font-face {
+            font-family: Font Regular;
+            src: url(../../assets/fonts/notosans-regular.2cb88a13.woff2);
+        }
+        .container{
+            position: fixed;
+            top:0;
+            right:0;
+            left: 0;
+            bottom: 0;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper{
+            width: 500px;
+            height: auto;
+            background-color: white;
+            padding: 24px;
+            position: relative;
+        }
+        .close-button{
+            position: absolute;
+            right: 24px;
+            top: 24px;
+        }
+        .close-button:hover{
+            color: red;
+        }
+        .ti-close{
+            font-size: 24px;
+        }
+        .title{
+            font-size: 24px;
+            font-weight: 700;
+            padding-bottom: 24px;
+        }
+        .description{
+            padding-bottom: 24px;
+            /* letter-spacing: 4px; */
+            text-align: justify;
+        }
+        .wrapper-button{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 8px;
+            padding-top: 24px;
+        }
+        .button-save:hover,
+        .button-cancel:hover{
+            background-color: red;
+        }
+        .button-save{
+            border-radius: 4px;
+            background-color: aqua;
+            padding: 8px 12px;
+        }
+        .button-cancel{
+            border-radius: 4px;
+            background-color: aqua;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="close-button ti-close"></div>
+            <div class="title">Màu thương hiệu</div>
+            <div class="description">Màu thương hiệu (màu chính) của một ứng dụng các loại màn hình Desktop có thể là khác nhau trên nền tảng MISA AMIS và nó phải phản ánh thương hiệu của MISA.</div>
+            <hr>
+            <div class="wrapper-button">
+                <div class="button-save">Đồng ý</div>
+                <div class="button-cancel">Hủy bỏ</div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
