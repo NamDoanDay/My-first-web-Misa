@@ -36,16 +36,20 @@
                     <div class="id-name-info">
                         <div class="id-info">
                             <label for="id-text">Mã<i style="color: red;">*</i></label>
-                            <input type="text" name="" id="id-text">
+                            <input type="text" name="" id="id-text" class="input-id-here input">
+                            <div class="error-text" hidden>Mã nhân viên không được để trống</div>
                         </div>
                         <div class="name-info">
                             <label for="id-name">Tên<i style="color: red;">*</i></label>
-                            <input class="input-name-here" type="text" name="" id="id-name">
+                            <input class="input-name-here input" type="text" name="" id="id-name">
+                            <div class="error-text" hidden>Họ và tên không được để trống</div>
                         </div>
                     </div>
                     <div class="apartment-info">
                         <label for="apartment-text">Đơn vị<i style="color: red;">*</i></label>
                         <input class="input-apartment-here" type="text" name="" id="apartment-text">
+                        <select class="combobox" name="department" id=""></select>
+                        <div class="error-text" hidden>Đơn vị không được để trống</div>
                     </div>
                     <div class="position-info">
                         <label for="position-name">Chức danh<i style="color: red;">*</i></label>
@@ -120,11 +124,11 @@
             <div class="page-footer">
                 <div class="footer-wapper">
                     <div class="left-footer">
-                        <div class="icon-cancel">Hủy</div>
+                        <div id="btn-cancel" class="icon-cancel">Hủy</div>
                     </div>
                     <div class="right-footer">
-                        <div class="cut">Cắt</div>
-                        <div class="cut-and-add">Cắt và Thêm</div>
+                        <div id="btn-save" class="cut">Cắt</div>
+                        <div id="btn-saveadd" class="cut-and-add">Cắt và Thêm</div>
                     </div>
                 </div>
             </div>
