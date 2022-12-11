@@ -31,6 +31,7 @@ function loadData(){
                     //2. Định dạng tiền tệ -> 1.000.000 vnđ
                     employeePhone =new Intl.NumberFormat('en-US').format(employeePhone);
                     var employeeAddress= emp.Address;
+                    //nội suy là truyền value từ bên ngoài vào thẻ html
                     var newTrHtml=`<tr>
                     <td><input type="checkbox"></td>
                     <td>${employeeName||"chịu"}</td>
@@ -39,6 +40,7 @@ function loadData(){
                     <td class="text-align--center">${employeeAddress||"chịu"}</td>
                 </tr>`
                 //Hiển thị dữ liệu lên table
+                //mỗi lần append thì nó append xuống dưới
                 $("#employeeDetailTable tbody").append(newTrHtml);
                 }
             },
