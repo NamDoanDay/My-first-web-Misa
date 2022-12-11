@@ -74,11 +74,11 @@ function createEvent(){
         document.getElementById("btn-add").addEventListener("click",function(){
             document.getElementById("popup-employee-detail").style.display = "block";
         });
-        //hoặc
+        //hoặc gọi hàm
+        document.getElementById("btn-add").addEventListener("click",btnAddOnClick);
         // đặc điểm của hàm trong js: ko quan trọng đến truyền tham số, chỉ quan tâm đến tên hàm, nó tìm đến hàm có tên như vậy r nó chạy.
         // nó ko có overload, nó chỉ quan tâm đến hàm viết sau sẽ đè lên hàm viết trc, và ko quan tâm đến truyền tham số hay ko truyền, thích thì truyền, ko thì thôi
-        document.getElementById("btn-add").addEventListener("click",btnAddOnClick);
-        //jquery
+        //hoặc dùng jquery
         $("#btn-add").click(btnAddOnClick);
         //Sự kiện đóng close dialog
         $("#btn-close").click(btnCloseOnClick);
