@@ -29,10 +29,10 @@ function loadData(){
                     //nội suy là truyền value từ bên ngoài vào thẻ html
                     var newTrHtml=`<tr>
                     <td><input type="checkbox"></td>
-                    <td>${employeeName||"chịu"}</td>
-                    <td>${employeeEmail||"chịu"}</td>
-                    <td class="text-align--right">${employeePhone||"chịu"}</td>
-                    <td class="text-align--center">${employeeAddress||"chịu"}</td>
+                    <td>${employeeName||""}</td>
+                    <td>${employeeEmail||""}</td>
+                    <td class="text-align--right">${employeePhone||""}</td>
+                    <td class="text-align--center">${employeeAddress||""}</td>
                 </tr>`
                 //2. Định dạng tiền tệ -> 1.000.000 vnđ
                 //Hiển thị dữ liệu lên table

@@ -4,11 +4,12 @@
     min-width: 75px;
     border-radius: 4px;
     border: unset;
-    color: #fff;
+    color: black;
+    border-radius: 4px;
 }
 /* button mac dinh, 1 dang cua button cho 2 gach -- . Quy tac BEM */
 .btn--default{
-    background-color:  greenyellow;
+    background-color:  rgb(116, 237, 112);
 }
 .btn--error{
     background-color: red;
@@ -45,11 +46,11 @@
     /* background-size: 16px 16px; */
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-color: aquamarine;
+    background-color: #fff;
 }
 
 .btn--filter{
-    background-color: aquamarine;
+    background-color: #fff;
     height: 36px;
     width: 36px;
     border: 1px solid gray;
@@ -61,7 +62,7 @@
     background-repeat: no-repeat;
 }
 .icon-ba-cham{
-    background-color: aquamarine;
+    background-color: #fff;
     height: 36px;
     width: 36px;
     border: 1px solid gray;
@@ -71,4 +72,22 @@
     background-position-x: 10px;
     background-size: 16px 16px;
     background-repeat: no-repeat;
+}
+.btn-icon--search{
+    background-position-x: 12px;
+    background-position-y: center;
+    background-size: 16px 16px;
+    background-image: url(../../assets/img/addnew.png);
+    background-repeat: no-repeat;
+    padding-left: 36px;
+    padding-right: 16px;
+}
+.btn-icon--add{
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+.btn:hover{
+    background-color: #50B83C;
 }

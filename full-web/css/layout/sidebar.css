@@ -28,7 +28,7 @@ a.navbar-item{
     /* padding-left: 10px; */
 }
 .navbar-item:hover,.sidebar-option:hover{
-    background-color: aqua;
+    background-color: #9CD5B3;
 }
 .navbar__icon{
     width: 24px;
@@ -41,7 +41,7 @@ a.navbar-item{
     color: black;
 }
 .navbar-item--active{
-    background-color: antiquewhite;
+    background-color: #9CD5B3;
 }
 .sidebar-option{
     width: 100%;
@@ -51,8 +51,12 @@ a.navbar-item{
     align-items: center;
     cursor: pointer;
     border-radius: 4px;
+    column-gap: 12px;
 }
 .below-icon{
     font-size: 18px;
     margin: 0px 12px;
+}
+.below-content{
+    font-size: 16px;
 }

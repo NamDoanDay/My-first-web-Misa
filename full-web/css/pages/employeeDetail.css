@@ -12,7 +12,8 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-.main{
+#main-add-new{
+    background-color: rgb(149, 143, 143);
     position: fixed;
             top: 0;
             right: 0;
@@ -20,24 +21,24 @@ body{
             bottom: 0;
             width: 100vw;
             height: 100vh;
-            background-color: gray;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;     
 }
-.container{
+.container-add-new{
+    background-color: #fff;
     box-sizing: border-box;
-            padding: 12px 12px;
-            background-color: white;
             width: 50%;
             height: 70vh;
             display: grid;
             grid-template-rows: 56px 1fr 56px;
+            padding: 16px 16px;
+            border-radius: 8px; 
+            border: 1px solid gray 
 }
-.header{
+.header-add-new{
     width: 100%;
     height: 56px;
-            background-color: aqua;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -46,15 +47,13 @@ body{
 .content-info{
     width: 100%;
     height: 100%;
-    background-color: greenyellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 24px;
 }
-.page-footer{
+.page-footer-add-new{
     border-top: 2px solid gray;
-    background-color: violet;
     width: 100%;
     height: 56px;
 }

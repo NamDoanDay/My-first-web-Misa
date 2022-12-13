@@ -7,12 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../lib/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../../css/pages/employeeDetail.css">
+    <link rel="stylesheet" href="../../css/pages/error.css">
     <script src="/js/jquery-3.6.1.min.js"></script>
 </head>
 <!-- thẻ b - bold -->
 <body>
     <div id="container">
-
         <!-- header -->
         <div class="header">
             <div class="header__left">
@@ -24,7 +25,7 @@
             </div>
             <div class="header__right">
                 <div class="header-text-search">
-                    <input class="text-search" type="text">
+                    <input class="text-search btn-icon--search" type="text">
                 </div>
                 <div class="three-function-and-avatar">
                 <div class="icon ti-email"></div>
@@ -86,7 +87,7 @@
             </div>
             <div class="sidebar-option">
                 <div class="below-icon ti-control-skip-backward"></div>
-                <div class="below-content">Chuyển hướng</div>
+                <div class="below-content">Thu nhỏ</div>
             </div>
         </div>
 
@@ -94,10 +95,10 @@
         <div class="main">
             <div class="page">
                 <div class="page__header">
-                    <div class="page__title">Employee List</div>
+                    <div class="page__title">Danh sách nhân viên</div>
                     <div class="right-page-header">
                         <div class="page__button">
-                            <button onclick="btnAddOnClick()" id="btn-add" class="btn btn--default btn-icon">Thêm mới</button>
+                            <button id="buttonAddOnClick" class="btn btn--default btn-icon btn-icon--add">Thêm mới</button>
                         </div>
                         <button class="icon-ba-cham"></button>
                     </div>
@@ -113,7 +114,7 @@
                             <div class="toolbar__right">
                                 <div class="select-department">
                                     <select class="department-name" name="department-name" size="1">
-                                        <option value="">--Chọn công ty đê ông cháu--</option>
+                                        <option value="">--- Chọn công ty ---</option>
                                         <option value="">MISA shain desu</option>
                                     </select>
                                 </div>
@@ -127,90 +128,36 @@
                             <table id="employeeDetailTable">
                                 <!-- text căn trái, ngày tháng căn giữa, tiền hoặc tỉ lệ căn phải -->
                                 <thead>
-                                    <th class="text-align--left" style="width: 20px;"><input type="checkbox"></th>
-                                    <th class="text-align--left">Full name</th>
-                                    <th class="text-align--left" style="width: 50px;">Email</th>
-                                    <th class="text-align--right" style="width: 100px;">Phone number</th>
-                                    <th class="text-align--center" style="width: 200px;">Address</th>
+                                    <th class="text-align--left td-style" ><input type="checkbox"></th>
+                                    <th class="text-align--left td-style" >Full name</th>
+                                    <th class="text-align--left td-style" >Phone Number</th>
+                                    <th class="text-align--left td-style" >Email</th>
+                                    <th class="text-align--left td-style" >Telephone Number</th>
+                                    <th class="text-align--left td-style" >Department Name</th>
+                                    <th class="text-align--left td-style" >Gender</th>
+                                    <th class="text-align--left td-style" >Place</th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                        <td class="text-align--left">Đoàn Trung Nam</td>
+                                        <td class="text-align--left">0705797735</td>
+                                        <td class="text-align--left">namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--left">0705797735</td>
+                                        <td class="text-align--left">CHủ tịch hội đồng quản trị</td>
+                                        <td class="text-align--left">Nam</td>
+                                        <td class="text-align--left">Tân Hà Tuyên Quang</td>
                                     </tr>
                                     
                                     <tr>
                                         <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>Đoàn Trung Nam</td>
-                                        <td>namdthe163643@fpt.edu.vn</td>
-                                        <td class="text-align--right">0705797735</td>
-                                        <td class="text-align--center">Tân Hà Tuyên Quang</td>
+                                        <td class="text-align--left">Đoàn Trung Nam</td>
+                                        <td class="text-align--left">0705797735</td>
+                                        <td class="text-align--left">namdthe163643@fpt.edu.vn</td>
+                                        <td class="text-align--left">0705797735</td>
+                                        <td class="text-align--left">CHủ tịch hội đồng quản trị</td>
+                                        <td class="text-align--left">Nam</td>
+                                        <td class="text-align--left">Tân Hà Tuyên Quang</td>
                                     </tr>
                                 </tbody>
                             </table>    
@@ -232,6 +179,147 @@
             </div>
         </div>
     </div>
-    <script src="/js/employee.js"></script>
+
+    <!-- dialog Thêm mới -->
+    <div id="main-add-new" hidden>
+        <div class="container-add-new">
+            <div class="header-add-new">
+                <div class="left-header-add-new">
+                    <div class="title">Thong tin nhan vien</div>
+                    <input class="select-type" type="checkbox">
+                    <div class="type">Là khách hàng</div>
+                    <input class="select-type" type="checkbox">
+                    <div class="type">Là nhà cung cap</div>
+                </div>
+                <div class="right-header-add-new">
+                    <div class="icon-header ti-help-alt"></div>
+                    <div class="icon-header ti-close"></div>
+                </div>
+            </div>
+            <div class="content-info">
+                <div class="left-input-info">
+                    <div class="id-name-info">
+                        <div class="id-info">
+                            <label for="id-text">Mã<i style="color: red;">*</i></label>
+                            <input type="text" m-required field-label="Mã" property-name="id-text" name="" id="id-text" class="input-id-here input"><br>
+                            <div id="id-error-text" class="error-text" hidden>Mã không được để trống</div>
+                        </div>
+                        <div class="name-info">
+                            <label for="id-name">Tên<i style="color: red;">*</i></label>
+                            <input class="input-name-here input" m-required field-label="Họ và tên" property-name="id-name" type="text" name="" id="id-name">
+                            <div id="id-error-text" class="error-text">Họ và tên không được để trống</div>
+                        </div>
+                    </div>
+                    <div class="apartment-info">
+                        <label for="id-apartment">Đơn vị<i style="color: red;">*</i></label>
+                        <select m-required field-label="Đơn vị" property-name="id-apartment" class="input-apartment-here combobox" name="apartment-text" id="id-apartment">
+                            <option value="">Phòng nhân sự</option>
+                            <option value="">Phòng tuyển sinh</option>
+                            <option value="">Phòng nhân sự</option>
+                            <option value="">Phòng tuyển sinh</option>
+                        </select>
+                        <div id="id-error-text" class="error-text" hidden>Đơn vị không được để trống</div>
+                    </div>
+                    <div class="position-info">
+                        <label for="id-position">Chức danh<i style="color: red;">*</i></label>
+                        <input m-required field-label="Chức danh" property-name="id-position" class="input-position-here" type="text" name="" id="id-position">
+                    </div>
+                </div>
+                <div class="right-input-info">
+                    <div class="dob-gender-info">
+                        <div class="dob-gender">
+                            <label for="id-dob">Ngày sinh</label>
+                            <input type="date" name="" id="id-dob">
+                        </div>
+                        <div class="gender-info">
+                            <label for="gender-radio">Giới tính</label>
+                            <div id="gender-radio">
+                                <input type="radio" name="gender-radio-here" id="" class="gender-radio-here" value="0" checked>Nam
+                                <input type="radio" name="gender-radio-here" id="" class="gender-radio-here" value="1">Nữ
+                                <input type="radio" name="gender-radio-here" id="" class="gender-radio-here" value="2">Khác
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-card-date-info">
+                        <div class="person-card-info">
+                            <label for="id-person-card">Số CCCD</label>
+                            <input type="text" name="" id="id-person-card">
+                        </div>
+                        <div class="date-info">
+                            <label for="date-input">Ngày cấp</label>
+                            <input class="input-name-here" type="text" name="" id="date-input">
+                        </div>
+                    </div>
+                    <div class="noicap-info">
+                        <label for="noicap-name">Nơi cấp<i style="color: red;">*</i></label>
+                        <input class="input-noicap-here" type="text" name="" id="noicap-name">
+                    </div>
+                </div>
+                <div class="bottom-input-info">
+                    <div class="address-info">
+                        <label for="address-name">Địa chỉ</label>
+                        <input class="input-address-here" type="text" name="" id="address-name">
+                    </div>
+                    <div class="phone-email-bankAccount">
+                        <div class="info phone-info">
+                            <label for="phone-name">ĐT di động</label>
+                            <input class="input input-phone-here" type="text" name="" id="phone-name">
+                        </div>
+                        <div class="info telephone-info">
+                            <label for="telephone-name">ĐT cố định</label>
+                            <input class="input input-telephone-here" type="text" name="" id="telephone-name">
+                        </div>
+                        <div class="info email-info">
+                            <label for="email-name">Email</label>
+                            <input class="input input-email-here" type="text" name="" id="email-name">
+                        </div>
+                        <div class="info bank-account-info">
+                            <label for="bank-account-name">Tài khoản ngân hàng</label>
+                            <input class="input input-bank-account-here" type="text" name="" id="bank-account-name">
+                        </div>
+                        <div class="info bank-name-info">
+                            <label for="bank-name-name">Tên ngân hàng</label>
+                            <input class="input input-bank-name-here" type="text" name="" id="bank-name-name">
+                        </div>
+                        <div class="info bank-branch-info">
+                            <label for="bank-branch-name">Chinh nhánh</label>
+                            <input class="input input-bank-branch-here" type="text" name="" id="bank-branch-name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer-add-new">
+                <div class="footer-wapper-add-new">
+                    <div class="left-footer-add-new">
+                        <button id="clickOnCancel" id="btn-cancel" class="icon-cancel">Hủy</button>
+                    </div>
+                    <div class="right-footer-add-new">
+                        <button id="btn-save" class="cut">Cắt</button>
+                        <button id="btn-saveadd" class="cut-and-add">Cắt và Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thông báo lỗi -->
+    <div id="main-error" hidden>
+        <div class="container-error">
+            <div class="top-side-error">
+            <div class="icon-allert">
+                <i class="ti-alert"></i>
+            </div>
+            <div class="message-error">
+            <div class="detail">Ma nhan vien ... da ton tai trong he thong</div>
+            </div>
+            </div>
+            <div class="bottom-side-error">
+            <div class="footer-error">
+                <button id="accept-error" class="dongy">Dong y</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- link js -->
+    <script src="/js/employee4.js"></script>
 </body>
 </html>
