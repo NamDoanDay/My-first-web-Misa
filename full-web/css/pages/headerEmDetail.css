@@ -1,11 +1,10 @@
-.left-header {
-    background-color: red;
+.left-header-add-new {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.right-header {
+.right-header-add-new {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -14,9 +13,26 @@
 .title {
     font-size: 24px;
     font-weight: 700;
-    padding-right: 12px;
 }
 .icon-header {
     font-size: 24px;
     
+}
+.header-add-new{
+}
+.ti-close:hover{
+    color: red;
+}
+.ti-help-alt:hover{
+    color: #50B83C;
+}
+.title{
+    padding-right: 16px;
+}
+.type{
+    padding-right: 8px;
+}
+input.select-type{
+    width: 20px;
+    height: 20px;
 }

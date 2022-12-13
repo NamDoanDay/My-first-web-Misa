@@ -5,22 +5,23 @@
     justify-content: space-between;
 }
 .table__toolbar{
-    background-color: brown;
-    height: 36px;
+    background-color: #fff;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 8px;
 }
 .table__container{
-    background-color: aliceblue;
+    background-color: #fff;
     flex: 1;
     margin-top: 12px;
     overflow-y: auto;
 }
 .table__paging{
+    background-color: #fff;
     width: 100%;
-    background-color: red;
-    height: 32px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +30,19 @@
     height: 56px;
 }
 thead{
+    width: 100%;
+    background-color: #ccc;
     position: sticky;
     top: 0;
-    background-color: aliceblue;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.department-name{
+    font-size: 16px;
+}
+.td-style{
+    overflow: hidden;
+    /* display: inline-block; */
+    white-space: nowrap;
 }

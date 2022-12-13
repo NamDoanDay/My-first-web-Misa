@@ -29,19 +29,19 @@ body{
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-rows: 56px auto;
+    background-color: #EEF8EC;
 }
 /* B2: dựng lay out item cho các element con - nhớ đặt màu để quan sát  */
 
 
 .sidebar{
     box-sizing: border-box;
-    background-color: blue;
     grid-row: 2/3;
+    background-color: #0D0833;
 }
 /* main đã đc set kích thước theo grid rồi */
 .main{
     /* height: 100%; */
-    background-color: yellow;
     grid-column: 2/3;
     padding: 24px ;
     overflow-y: auto;
